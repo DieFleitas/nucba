@@ -1,0 +1,66 @@
+@import url('https://fonts.google.com/specimen/Spartan');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.contenedor {
+    width: 80%;
+    min-height: 100vh;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.description {
+    border: 1px solid red;
+}
+
+.rating {
+    display: grid;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.rating .rating-reviews {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.rating .rating-reviews .stars {
+    /* height: max-content; */
+    background-image: url(./images/icon-star.svg);
+    background-size: auto;
+    border: 5px solid blue;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 3;
+    align-items: center;
+    border: 1px solid red;
+}
+
+
+.attribution {
+    position: relative;
+    font-size: 11px;
+    text-align: center;
+    bottom: 10px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

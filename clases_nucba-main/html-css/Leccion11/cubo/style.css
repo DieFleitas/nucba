@@ -1,0 +1,67 @@
+h2{
+    margin-top: 100px;
+}
+
+.ex1{
+    perspective: 800px;
+}
+
+.ex2{
+    perspective: 150px;
+}
+
+.cube{
+    font-size: 4em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-45deg) rotateY(36deg);
+}
+
+.side{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background-color: rgba(100, 100, 100, 0.5);
+    border: 1px solid red;
+    text-align: center;
+    line-height: 2em;
+    animation-name: cuboColores;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.front{
+    transform: translateZ(1em);
+}
+
+.top{
+    transform: rotateX(90deg) translateZ(1em);
+}
+
+.right{
+    transform: rotateY(90deg) translateZ(1em);
+}
+
+.left{
+    transform: rotateY(-90deg) translateZ(1em);
+}
+
+.bottom{
+    transform: rotateX(-90deg) translateZ(1em);
+}
+
+.back{
+    transform: rotateY(-180deg) translateZ(1em);
+}
+
+
+
+@keyframes cuboColores{
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow ;left: 200px; top: 0px;}
+    50% {background-color: maroon; left:200px; top:200px;}
+    75% {background-color: mediumslateblue; left:0px; top:200px;}
+    100% {background-color: mediumspringgreen; left:0px; top:0px;}
+}

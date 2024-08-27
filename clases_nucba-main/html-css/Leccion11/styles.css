@@ -1,0 +1,31 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    border: 1px solid black;
+    /* transform: translate(50px, 100px); */
+    /* transform: rotate(20deg); */
+    /* transform: scale(2, 1); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+    border-radius: 50px;
+}
+
+div:hover{
+    transform: translate(50px, 100px);
+    transform: rotate(20deg);
+    transform: scaleY(2);
+    transform: skew(20deg);
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+
+.divRosita{
+    background-color: palevioletred;
+    width: 100px;
+    height: 100px;
+}
+
+.divRosita:hover{
+    transform: rotateX(90deg);
+    perspective: 100px;
+}

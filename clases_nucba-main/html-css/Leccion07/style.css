@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(45deg, rgb(127, 88, 218), rgb(122, 151, 134));
+}
+
+h1, h2, h3, p{
+    margin-top: 10px;
+    background-color: rgba(184, 135, 11, 0.356);
+}
+
+h1, .claseDos{
+    font-size: 100px;
+}
+
+.perritoSalchicha{
+    background-color: maroon;
+}
+
+#perritosalchicha{
+    background-color: crimson;
+}

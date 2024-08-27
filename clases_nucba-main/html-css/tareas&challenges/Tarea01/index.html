@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea</title>
+</head>
+<style>
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        /* font-size: 1.5em; */
+        /* height: 100%; */
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-image: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+        border-radius: 0 30px 0 30px;
+        box-shadow: 1px 4px 10px black;
+        /* padding: 40px; */
+    }
+
+    h1{
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    p{
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 545;
+    }
+
+    img{
+        width: max-content;
+        align-self: center;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px grey;
+    }
+
+    ul {
+        list-style: georgian inside;
+    }
+
+    ul li{
+        text-align: center;
+        margin: 5px;
+    }
+
+    span{
+        text-decoration: underline;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+
+    a{
+        text-decoration: none;
+
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    label{
+        display: flex;
+        justify-content: center;
+        /* margin: 3px; */
+    }
+
+    textarea{
+        resize: none;
+        border-radius: 5px;
+        box-shadow: 2px 5px 10px black;
+        margin-left: 8px;
+    }
+
+    button{
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: lightslategrey;
+    }
+</style>
+<body>
+    <div>    
+        <h1>
+            Diego Fleitas
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur numquam officiis, tenetur eaque ipsam. Iste sint aliquid error repudiandae unde, praesentium culpa! Adipisci sint eaque, repudiandae repellendus vero animi!
+        </p>
+        <img src="./img/salchiCool.jpg" alt="imagen de perro salchicha">
+        <ul>
+            <li> <span>Nombre:</span> Diego</li>
+            <li><span>Apellido:</span> Fleitas</li>
+            <li><span>Edad:</span> 23</li>
+            <li><span>Mail:</span> <a href="mailto:diegofleitas98@outlook.es">diegofleitas98@outlook.es</a></li>
+            <li><span>GitHub:</span> <a href="https://github.com/DieFleitas">DieFleitas</a></li>
+        </ul>
+        <h2>Mensajeame!</h2>
+        <form action="">
+            <label for="">Mensaje<textarea name="" id="" cols="30" rows="10"></textarea> </label>
+            <button type="submit">Enviar</button>
+            <!-- <label for="">Nombre<input type="text"></label>
+            <label for="">Apellido<input type="text"></label>
+            <label for="">Email<input type="text"></label> -->
+        </form>
+    </div>
+</body>
+</html>

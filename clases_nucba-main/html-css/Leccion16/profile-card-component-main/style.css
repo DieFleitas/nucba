@@ -1,0 +1,104 @@
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* PRYMARY */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* NEUTRAL */
+    --dark-gray: hsl(0, 0%, 59%);
+
+    /* FUENTE */
+
+    --tipografia: 'Kumbh Sans';
+
+}
+
+
+    
+    body {
+        /* font-family: var(--tipografia); */
+        background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+        background-color: var(--dark-cyan);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+        display: flex;
+        justify-content: center;
+
+    
+    }
+
+    .card__body__name {
+        font-family: var(--tipografia);
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: 100vh;
+        position: relative;
+
+    }
+
+    .card {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: -10px 25px 300px  var(--dark-grayish-blue);
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .card .card__body {
+        background-color: white;
+        border-bottom: 0.3px solid rgb(221, 217, 217);
+        position: relative;
+    }
+
+    .card .card__body .card__body__image {
+        position: absolute;
+        border-radius: 50%;
+        outline: 5px solid white;
+        top: -48px;
+        left: 130px;
+    }
+
+    .card__body .card__body__data {
+        text-align: center;
+        margin-top: 65px;
+    }
+
+    .card__body__data .card__body__city {
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .card .card__footer {
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 30px;
+    }
+
+    .attribution { 
+        position: absolute;
+        bottom: 15px;
+        font-size: 1.5vh;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
